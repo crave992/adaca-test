@@ -1,0 +1,48 @@
+:root {
+  --bg: #0b1020;
+  --surface: #18233a;
+  --border: #223458;
+  --text: #ecf2f8;          /* higher contrast */
+  --muted: #c0cada;         /* readable secondary */
+  --primary: #4f8cff;
+  --primary-600: #3f72d6;
+  font-family: Inter, ui-sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.7;         /* improve readability */
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 800px at 10% -10%, #1a2337 0%, var(--bg) 50%), var(--bg);
+  color: var(--text);
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { color: var(--primary-600); }
+
+h1 { font-size: 2rem; margin: 0; }
+h2 { font-size: 1.5rem; margin: 0; }
+h3, h4 { color: var(--text); }
+
+/* PrimeReact card readability */
+.p-card { color: var(--text); background: transparent; border: 1px solid var(--border); }
+.p-card .p-card-title { color: var(--text); font-weight: 700; letter-spacing: 0.2px; }
+.p-card .p-card-subtitle { color: var(--muted); font-weight: 600; }
+.p-card .p-card-content p { margin: 0.25rem 0; line-height: 1.8; }
+.p-card .p-card-content strong { color: var(--text); }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.surface {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+}
