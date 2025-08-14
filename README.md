@@ -51,7 +51,7 @@ Outputs to `storybook-static/`.
 Total: ~4 hours
 
 ## Decisions & trade-offs
-- Mock API over live JSONPlaceholder: Enables consistent local data and Filipino personas while keeping the app offline-capable.
+- Mock API over live JSONPlaceholder: Enables consistent local data while keeping the app offline-capable.
 - Minimal state management: Simple `useState`/`useEffect` for clarity. Could adopt React Query for caching/retries in a larger app.
 - PrimeReact DataTable: Chosen for quick, accessible table with sorting/pagination and responsive scroll. Custom column renderers used for readability.
 - Storybook minimal config: Removed unused MDX/addons to avoid build issues with Vite 7; focused on an example `UserCard` story.
